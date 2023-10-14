@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HYRTestSuite">
+    <listeners>
+        <listener class-name="Utilities.Listener"></listener>
+    </listeners>
+    <test name="pages" verbose="5">
+        <groups>
+            <define name="">
+                <include name=""/>
+            </define>
+        </groups>
+
+        <classes>
+            <class name="pages.XpathPractice">
+                <methods>
+                    <include name="testXpath"/>
+                    <include name="framesTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

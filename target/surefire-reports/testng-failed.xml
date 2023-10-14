@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [HYRTestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Utilities.Listener"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="pages(failed)" verbose="0">
+    <classes>
+      <class name="pages.XpathPractice">
+        <methods>
+          <include name="testXpath"/>
+          <include name="setDriver"/>
+          <include name="closeBrowser"/>
+          <include name="framesTest"/>
+        </methods>
+      </class> <!-- pages.XpathPractice -->
+    </classes>
+  </test> <!-- pages(failed) -->
+</suite> <!-- Failed suite [HYRTestSuite] -->
